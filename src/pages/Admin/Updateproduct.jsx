@@ -316,7 +316,7 @@ const UpdateProduct = () => {
                           <span className="up-current-label">Current photo:</span>
                           <img
                             className="up-current-photo"
-                            src={currentPhoto ? `${import.meta.env.VITE_API}/uploads/${currentPhoto}` : ""}
+                            src={currentPhoto ? `${import.meta.env.VITE_API}${currentPhoto}` : ""}
                             alt="current product"
                             onError={(e) => (e.target.style.display = "none")}
                           />

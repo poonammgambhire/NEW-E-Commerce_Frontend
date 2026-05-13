@@ -270,7 +270,7 @@ export default function CategoryPage() {
                 <img
                   src={
                     product.photo
-                      ? `${API}/uploads/${product.photo}`
+                      ? `${API}${product.photo}`
                       : "https://via.placeholder.com/300x300?text=No+Image"
                   }
                   alt={product.name}

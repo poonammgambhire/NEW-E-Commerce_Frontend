@@ -571,7 +571,7 @@ function Header() {
                         className="amz-suggestion-img"
                         src={
                           product.photo
-                            ? `${API}/uploads/${product.photo}`
+                            ? `${API}${product.photo}`
                             : "https://via.placeholder.com/36x36?text=?"
                         }
                         alt={product.name}

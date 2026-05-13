@@ -281,7 +281,7 @@ const SearchPage = () => {
                       className="srp-img"
                       src={
                         product.photo
-                          ? `${import.meta.env.VITE_API}/uploads/${product.photo}`
+                          ? `${import.meta.env.VITE_API}${product.photo}`
                           : "https://via.placeholder.com/300x300?text=No+Image"
                       }
                       alt={product.name}

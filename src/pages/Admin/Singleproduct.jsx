@@ -70,7 +70,7 @@ const SingleProduct = () => {
                   {/* Photo */}
                   <div className="col-md-4 text-center">
                     <img
-                      src={`${import.meta.env.VITE_API}/uploads/${product.photo}`}
+                      src={`${import.meta.env.VITE_API}${product.photo}`}
                       alt={product.name}
                       className="img-fluid rounded-3"
                       style={{ maxHeight: 300, objectFit: "cover", width: "100%", background: "#f0f0f0" }}
