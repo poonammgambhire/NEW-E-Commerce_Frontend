@@ -776,7 +776,7 @@ function CategoryWidgets({ categories, products, onCatClick }) {
                 <div key={i} className="amz-cat-img-cell">
                   {catProducts[i]?.photo ? (
                     <img
-                      src={`${import.meta.env.VITE_API}${catProducts[i].photo}`}
+                      src={`${catProducts[i].photo}`}
                       alt=""
                       onError={(e) => (e.target.style.display = "none")}
                     />
@@ -880,7 +880,7 @@ function ProductCard({ product, navigate, addToCart, wishlist, toggleWishlist })
             className="amz-card-img"
             src={
               product.photo
-                ? `${import.meta.env.VITE_API}${product.photo}`
+                ? `${product.photo}`
                 : "https://via.placeholder.com/300?text=No+Image"
             }
             alt={product.name}

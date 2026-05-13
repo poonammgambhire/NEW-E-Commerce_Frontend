@@ -295,7 +295,7 @@ const Products = () => {
                     ) : (
                       <img
                         className="prod-img"
-                        src={`${import.meta.env.VITE_API}${product.photo}`}
+                        src={`${product.photo}`}
                         alt={product.name}
                         onError={() =>
                           setImgErrors((prev) => ({ ...prev, [product._id]: true }))

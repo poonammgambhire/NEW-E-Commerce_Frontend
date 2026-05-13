@@ -99,7 +99,7 @@ const Cart = () => {
                       <img
                         src={
                           item.photo
-                            ? `${import.meta.env.VITE_API}${item.photo}`
+                            ? `${item.photo}`
                             : "https://via.placeholder.com/90x90?text=No+Image"
                         }
                         alt={item.name}

@@ -157,7 +157,7 @@ const Orders = () => {
                     >
                       {p.product?.photo ? (
                         <img
-                          src={`${import.meta.env.VITE_API}${p.product.photo}`}
+                          src={`${p.product.photo}`}
                           alt={p.product?.name}
                           style={{ width: "100%", height: "100%", objectFit: "contain", padding: 4 }}
                           onError={(e) => {
