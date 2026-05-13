@@ -396,7 +396,7 @@ const SingleProduct = () => {
 
   const getProductImg = (photo) =>
     photo
-      ? `${import.meta.env.VITE_API}/uploads/${photo}`
+      ? photo
       : "https://via.placeholder.com/300x300?text=No+Image";
 
   return (

@@ -819,7 +819,7 @@ function ProductRow({ title, products, navigate }) {
                 <div className="amz-row-img-wrap">
                   {p.photo ? (
                     <img
-                      src={`${import.meta.env.VITE_API}/uploads/${p.photo}`}
+                     src={p.photo}
                       alt={p.name}
                       onError={(e) => (e.target.style.display = "none")}
                     />
